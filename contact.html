@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>แนะนำสถานที่ท่องเที่ยว - สถานที่ท่องเที่ยว</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header role="banner">
+        <h1>ติดต่อเรา</h1>
+
+        <!-- เพิ่ม Hamburger Menu (☰) สำหรับเมนูในมือถือ -->
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+
+        <!-- เมนูหลักที่แสดงในหน้าคอมพิวเตอร์ -->
+<nav role="navigation" id="main-nav" class="main-nav">
+    <ul>
+        <li><a href="index.html">หน้าหลัก</a></li>
+        <li><a href="details.html">สถานที่ท่องเที่ยว</a></li>
+        <li><a href="contact.html">ติดต่อเรา</a></li>
+    </ul>
+</nav>
+
+
+        <!-- เมนูย่อยที่จะแสดงเมื่อคลิกที่ Hamburger Menu -->
+<nav id="sub-nav" class="sub-nav">
+    <ul>
+      <li><a href="index.html">หน้าหลัก</a></li>
+      <li><a href="details.html">สถานที่ท่องเที่ยว</a></li>
+      <li><a href="contact.html">ติดต่อเรา</a></li>
+    </ul>
+</nav>
+</header>
+
+        
+    <!-- เพิ่มฟอร์มติดต่อ -->
+<main role="main">
+    <section>
+      <h2>กรอกฟอร์มเพื่อติดต่อ</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>ข้อมูลส่วนตัว</legend>
+          <div class="form-row">
+            <label for="fname">ชื่อ :</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="กรุณากรอกชื่อ"
+              required
+            />
+            <label for="lname">นามสกุล :</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="กรุณากรอกนามสกุล"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="email">อีเมล :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="กรุณากรอกอีเมล"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="tel">เบอร์โทรศัพท์ :</label>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              pattern="[0-9]{10}"
+              maxlength="10"
+              placeholder="กรุณากรอกเบอร์โทรศัพท์"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="message">ข้อความ :</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="กรุณากรอกข้อความ"
+              required
+            ></textarea>
+          </div>
+          <div class="form-row">
+            <button type="submit">ส่งข้อความ</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+
+    <!-- ส่วนท้ายของเว็บไซต์ -->
+<footer>
+    <p>&copy; 2024 จังหวัดสมุทรปราการ</p>
+</footer>
+
+    
+
+    <!-- ส่วนสคริปต์ควบคุมเมนูแฮมเบอร์เกอร์ -->
+<script>
+    // สร้างตัวแปรเพื่อเข้าถึง Hamburger Menu และ Sub Nav
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const subNav = document.getElementById('sub-nav');
+
+    // เมื่อคลิกที่ Hamburger Menu ให้แสดง/ซ่อนเมนูย่อย
+    hamburgerMenu.addEventListener('click', () => {
+        subNav.classList.toggle('open');  // สลับการแสดงเมนูย่อย
+    });
+  </script>
+
+    
+  </body>
+</html>
