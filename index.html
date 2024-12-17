@@ -93,10 +93,18 @@
     <footer>
         <p>&copy; 2024 จังหวัดสมุทรปราการ</p>
     </footer>
+   <!-- ส่วนสคริปต์ควบคุมเมนูแฮมเบอร์เกอร์ -->
+   <script>
+    // ตัวแปรเก็บ Hamburger Menu และ Sub Nav
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const subNav = document.getElementById('sub-nav');
 
-    
+    // เพิ่ม Event Listener เพื่อสลับการแสดง/ซ่อนเมนูย่อย
+    hamburgerMenu.addEventListener('click', () => {
+        subNav.classList.toggle('open');  // เปิด/ปิดเมนูย่อย
+    });
+</script>
 
-    <!-- ส่วนสคริปต์ควบคุมเมนูแฮมเบอร์เกอร์ -->
    
 </body>
 </html>
