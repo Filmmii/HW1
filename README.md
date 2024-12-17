@@ -1,12 +1,13 @@
 # HW1
-# HW1
 ส่วนที่ 1: การเตรียมโปรเจค
 git clone <your-repo-url>
+
 ส่วนที่ 2: สร้าง branch สําหรับพัฒนา
 git checkout -b development
 git add .
 git commit -m "สร้างโครงสร้างโปรเจคเริ่มต้น"
 git push --set-upstream origin development
+
 ส่วนที่ 3: สร้าง branch สําหรับพัฒนา home page
 git checkout -b feature/home-page
 git add .
@@ -25,6 +26,7 @@ git add .
 git commit -m "เพิ่มส่วนท้ายของเว็บไซต์"
 git add .
 git commit -m "เพิ่มส่วนสคริปต์ควบคุมเมนูแฮมเบอร์เกอร์"
+
 ส่วนที่ 4: สร้าง branch สําหรับพัฒนา contact
 git checkout -b feature/contact
 git add .
@@ -41,6 +43,7 @@ git add .
 git commit -m "เพิ่มส่วนท้ายของเว็บไซต์"
 git add .
 git commit -m "เพิ่มส่วนสคริปต์ควบคุมเมนูแฮมเบอร์เกอร์"
+
 ส่วนที่ 5: สร้าง branch สําหรับพัฒนา details
 git checkout -b feature/details
 git add .
@@ -51,6 +54,7 @@ git add .
 git commit -m "เพิ่มเนื้อหาเมนูหลัก"
 git add .
 git commit -m "เพิ่มเมนูย่อยที่จะปรากฏเมื่อคลิกที่ Hamburger Menu"
+
 ส่วนที่ 6: สร้าง Branch สำหรับพัฒนา CSS
 1. สร้าง Branch ใหม่
 git checkout -b feature/css
@@ -59,6 +63,7 @@ git checkout -b feature/css
 3. Commit การเปลี่ยนแปลง
 git add .
 git commit -m "เพิ่มส่วนตกแต่ง"
+
 ส่วนที่ 7: Merge Branch
 1. เปลี่ยนกลับไปยัง Branch development
 git checkout development
