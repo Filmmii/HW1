@@ -112,6 +112,17 @@
     
 
     <!-- ส่วนสคริปต์ควบคุมเมนูแฮมเบอร์เกอร์ -->
+<script>
+    // สร้างตัวแปรเพื่อเข้าถึง Hamburger Menu และ Sub Nav
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const subNav = document.getElementById('sub-nav');
+
+    // เมื่อคลิกที่ Hamburger Menu ให้แสดง/ซ่อนเมนูย่อย
+    hamburgerMenu.addEventListener('click', () => {
+        subNav.classList.toggle('open');  // สลับการแสดงเมนูย่อย
+    });
+  </script>
+
     
   </body>
 </html>
